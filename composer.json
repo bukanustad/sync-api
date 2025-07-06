@@ -1,0 +1,5 @@
+{
+  "name": "php-sync-app",
+  "description": "Simple sync API in PHP",
+  "require": {}
+}
