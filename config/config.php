@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "db_pos"; // Ganti sesuai nama database kamu
+$host = getenv("DB_HOST") ?: "localhost";
+$user = getenv("DB_USER") ?: "root";
+$pass = getenv("DB_PASS") ?: "";
+$db   = getenv("DB_NAME") ?: "db_pos";
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
